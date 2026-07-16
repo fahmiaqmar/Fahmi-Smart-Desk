@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ms">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rekod Peribadi Fahmi</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>📒 Rekod Peribadi Fahmi</h1>
+
+    <div class="form-box">
+      <input type="date" id="date">
+      <input type="text" id="title" placeholder="Tajuk rekod">
+      <select id="category">
+        <option>IT Support</option>
+        <option>Repair Phone</option>
+        <option>OSH</option>
+        <option>Peribadi</option>
+      </select>
+      <textarea id="note" placeholder="Nota..."></textarea>
+      <button onclick="addRecord()">Tambah Rekod</button>
+    </div>
+
+    <input type="text" id="search" placeholder="Cari rekod..." onkeyup="displayRecords()">
+
+    <table>
+      <thead>
+        <tr>
+          <th>Tarikh</th>
+          <th>Tajuk</th>
+          <th>Kategori</th>
+          <th>Nota</th>
+          <th>Tindakan</th>
+        </tr>
+      </thead>
+      <tbody id="recordTable"></tbody>
+    </table>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
